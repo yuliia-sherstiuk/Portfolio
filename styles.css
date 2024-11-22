@@ -95,3 +95,49 @@ h2 {
     text-align: center;
     padding: 20px;
 }
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+    .burger-menu {
+        display: block;
+    }
+}
+
+.btn:hover {
+    background: #0056b3;
+    transition: 0.3s;
+}
+
+a {
+    text-decoration: none;
+    color: #007BFF;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #FF5733; /* Change la couleur du lien au survol */
+    text-decoration: underline; /* Souligne le lien */
+}
+
+.project-card img {
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover img {
+    transform: scale(1.05); /* Agrandit l'image au survol */
+}
+
+.btn {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Change la couleur de fond lors du survol */
+}
