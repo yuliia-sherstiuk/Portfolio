@@ -1,0 +1,310 @@
+/* Основные стили для страницы */
+body {
+    font-family: 'Roboto', sans-serif; /* Шрифт для текста на странице */
+    margin: 0; /* Убирает внешние отступы у body */
+    padding: 0; /* Убирает внутренние отступы у body */
+    background-color: #98bbd0; /* Цвет фона страницы */
+    color: #333; /* Основной цвет текста */
+}
+
+/* Стили для кнопок навигации */
+.btn {
+    display: inline-block; /* Кнопка будет отображаться как строчный блок */
+    background-color: #03122371; /* Фоновый цвет кнопки */
+    color: white; /* Цвет текста на кнопке */
+    text-transform: uppercase; /* Текст на кнопке будет в верхнем регистре */
+    font-size: 1em; /* Размер шрифта для кнопки */
+    font-weight: bold; /* Жирный шрифт */
+    padding: 10px 20px; /* Внутренние отступы для кнопки */
+    border-radius: 5px; /* Скругление углов кнопки */
+    text-decoration: none; /* Убирает подчеркивание текста */
+    transition: background-color 0.3s ease; /* Плавная смена цвета фона при наведении */
+}
+
+.btn:hover {
+    background-color: #abd2dd; /* Цвет фона при наведении на кнопку */
+}
+
+
+.header-content h1 {
+    font-size: 3.5em; /* Размер заголовка */
+    animation: fadeIn 3s ease-in-out; /* Анимация появления текста */
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-30px); } /* Начальная позиция (скрыто и смещено вверх) */
+    100% { opacity: 1; transform: translateY(0); } /* Конечная позиция (появление на месте) */
+}
+/* Стили для социальных иконок, выравнивание по горизонтали */
+.social-icons {
+    display: flex; /* Flexbox для выравнивания иконок */
+    justify-content: center; /* Иконки выровнены по центру */
+    gap: 200px; /* Расстояние между иконками */
+    margin-top: 20px; /* Внешний отступ сверху */
+}
+
+.social-icons a img {
+    width: 70px; /* Ширина иконки */
+    height: 70px; /* Высота иконки */
+    transition: transform 0.3s ease; /* Плавный эффект при изменении размеров */
+}
+
+.social-icons a img:hover {
+    transform: scale(1.2); /* Увеличение иконки при наведении */
+}
+
+/* Дополнительные стили для страницы */
+body {
+    font-family: 'Roboto', sans-serif; /* Задает основной шрифт */
+    margin: 0; /* Убирает отступы */
+    padding: 0; /* Убирает отступы */
+    background-color: #FAF3E0; /* Цвет фона */
+    color: #333; /* Цвет текста */
+}
+
+header {
+    background-color: #2c3e50; /* Фоновый цвет для заголовка */
+    color: rgb(252, 252, 252); /* Цвет текста */
+    text-align: center; /* Выравнивание текста по центру */
+    padding: 40px 0; /* Внутренние отступы сверху и снизу */
+}
+
+.nav-list {
+    list-style: none; /* Убирает маркеры списка */
+    padding: 0; /* Убирает внутренние отступы */
+    margin: 0; /* Убирает внешние отступы */
+    display: flex; /* Использование flex для выравнивания элементов */
+    justify-content: center; /* Выравнивание по центру */
+    gap: 20px; /* Расстояние между элементами списка */
+}
+
+h1 {
+    font-size: 2.5em; /* Размер шрифта для заголовка h1 */
+    margin: 20px 0; /* Внешние отступы сверху и снизу */
+}
+
+
+
+/* Основные стили для содержимого страницы */
+main {
+    padding: 40px 10%; /* Внутренние отступы для основного содержимого */
+}
+
+/* Секция "О нас" */
+.section {
+    margin-bottom: px; /* Внешний отступ снизу */
+}
+
+#about .about-content {
+    display: grid; /* Использование grid для выравнивания содержимого */
+    grid-template-columns: 1fr 2fr; /* Две колонки с пропорцией 1:2 */
+    gap: 20px; /* Расстояние между колонками */
+}
+
+.about-photo {
+    width: 100%; /* Ширина фото на 100% от родительского контейнера */
+    border-radius: 50%; /* Фото в форме круга */
+    max-width: 400px; /* Максимальная ширина фото */
+    object-fit: cover; /* Обрезка фото для заполнения контейнера */
+}
+
+/* Сетки для навыков и проектов */
+#skills .skills-grid,
+#projects .projects-grid {
+    display: grid; /* Использование grid для выравнивания карточек */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Колонки с минимальной шириной 250px */
+    gap: 20px; /* Расстояние между карточками */
+}
+
+.skill-card,
+.project-card {
+    background-color: #6a8e238b; /* Белый фон для карточек */
+    border: 1px solid #0c0505; /* Серая рамка */
+    border-radius: 8px; /* Скругленные углы */
+    padding: 20px; /* Внутренние отступы */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легкая тень */
+}
+
+h2 {
+    font-size: 2em; /* Размер шрифта для заголовков h2 */
+    margin-bottom: 20px; /* Внешний отступ снизу */
+}
+
+/* Стили для рамки изображения */
+.image-frame {
+    position: relative; /* Относительное позиционирование */
+    width: 85%; /* Ширина рамки */
+    padding: 15px; /* Внутренние отступы */
+    background-color:#232f0b81; /* Цвет фона рамки */
+    border: 2px solid #232f0b81; /* Цвет и толщина границы */
+    border-radius: 10px; /* Скругленные углы рамки */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тень для рамки */
+    overflow: hidden; /* Скрывает выходящее за границы содержимое */
+}
+
+.image-frame img {
+    display: block; /* Блочное отображение изображения */
+    width: 100%; /* Изображение занимает всю ширину рамки */
+    height: auto; /* Сохранение пропорций изображения */
+    border-radius: 5px; /* Легкое скругление углов изображения */
+    transition: transform 0.3s ease; /* Плавная анимация при наведении */
+}
+
+/* Увеличение изображения при наведении */
+.image-frame:hover img {
+    transform: scale(1.05); /* Легкое увеличение при наведении */
+}
+
+/* Стили для подвала */
+.footer {
+    background-color:#2C3E50; /* Фон подвала */
+    color: white; /* Цвет текста в подвале */
+    text-align: center; /* Центрирование текста */
+    padding: 20px; /* Внутренние отступы */
+}
+
+/* Переопределение стилей для кнопок */
+.btn:hover {
+    background: #011225; /* Изменение фона кнопки при наведении */
+    transition: 0.3s; /* Плавная анимация */
+}
+
+/* Стили для ссылок */
+a {
+    text-decoration: none; /* Убираем подчеркивание ссылки */
+    color: #14477e; /* Цвет текста ссылки */
+    transition: color 0.3s ease-in-out; /* Плавное изменение цвета при наведении */
+}
+
+a:hover {
+    color: #FF5733; /* Изменение цвета текста при наведении */
+    text-decoration: underline; /* Подчеркивание ссылки при наведении */
+}
+
+/* Плавное увеличение изображения в карточках проектов */
+.project-card img {
+    transition: transform 0.3s ease; /* Плавная анимация изменения размеров */
+}
+
+.project-card:hover img {
+    transform: scale(1.05); /* Увеличение изображения при наведении */
+}
+
+/* Основные стили для кнопок */
+.btn {
+    background-color:#E74C3C; /* Основной фон кнопки */
+    color: white; /* Цвет текста кнопки */
+    padding: 10px 200px; /* Внутренние отступы */
+    border-radius: 5px; /* Скругленные углы */
+    border: none; /* Без рамки */
+    transition: background-color 0.3s ease; /* Плавная смена цвета*/
+
+}
+    
+
+
+
+/*Media Queries for Various Screen Widths */
+
+/* Small screens, tablets, and large smartphones (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .intro {
+        font-size: 0.9rem;
+        padding: 1rem;
+    }
+
+    .image-grid {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .image-grid img {
+        width: 100%;
+        height: auto;
+    }
+
+    .services-grid {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .service {
+        width: 100%;
+    }
+}
+
+/* Medium screens, smaller laptops, and tablets (max-width: 1024px) */
+@media screen and (max-width: 1024px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .intro {
+        font-size: 1rem;
+    }
+
+    .image-grid img {
+        width: 200px;
+        height: 250px;
+    }
+
+    .services-grid {
+        gap: 1.5rem;
+    }
+
+    .service {
+        width: 80%;
+    }
+}
+
+/* Large screens, desktop monitors (max-width: 1440px) */
+@media screen and (max-width: 1440px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    .intro {
+        font-size: 1.1rem;
+    }
+
+    .image-grid img {
+        width: 220px;
+        height: 270px;
+    }
+
+    .services-grid {
+        gap: 2rem;
+    }
+
+    .service {
+        width: 250px;
+    }
+}
+
+/* Extra-large screens, large desktop monitors (max-width: 2560px) */
+@media screen and (max-width: 2560px) {
+    h1 {
+        font-size: 4rem;
+    }
+
+    .intro {
+        font-size: 1.3rem;
+    }
+
+    .image-grid img {
+        width: 300px;
+        height: 350px;
+    }
+
+    .services-grid {
+        gap: 3rem;
+    }
+
+    .service {
+        width: 400px;
+    }
+}
