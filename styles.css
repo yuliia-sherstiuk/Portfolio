@@ -194,7 +194,7 @@ a:hover {
 .btn {
     background-color:#E74C3C; /* Основной фон кнопки */
     color: white; /* Цвет текста кнопки */
-    padding: 10px 70px; /* Внутренние отступы */
+    padding: 15px 70px; /* Внутренние отступы */
     border-radius: 5px; /* Скругленные углы */
     border: none; /* Без рамки */
     transition: background-color 0.3s ease; /* Плавная смена цвета*/
